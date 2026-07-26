@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mo's Take-Aways | Nigel</title>
+  <style>
+    /* RESET & DARK PALETTE */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    :root {
+      --bg-dark: #111111;
+      --card-bg: #1c1c1c;
+      --accent-gold: #fbbf24;
+      --accent-red: #ef4444;
+      --text-light: #f9fafc;
+      --text-muted: #a1a1aa;
+      --border-dark: #2d2d2d;
+      --whatsapp-green: #25d366;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.5;
+      padding-bottom: 50px;
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      padding: 35px 20px 20px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .brand-badge {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, var(--accent-gold), var(--accent-red));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+      font-size: 2rem;
+      box-shadow: 0 4px 20px rgba(251, 191, 36, 0.25);
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: var(--accent-gold);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .subtitle {
+      color: var(--accent-red);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 2px;
+    }
+
+    .location-tag {
+      display: inline-block;
+      background-color: rgba(251, 191, 36, 0.1);
+      color: var(--text-muted);
+      border: 1px solid rgba(251, 191, 36, 0.2);
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-top: 12px;
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .section-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 25px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border-dark);
+    }
+
+    /* MENU CARDS */
+    .menu-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-dark);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .item-info h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-light);
+    }
+
+    .item-info p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .item-price {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--accent-gold);
+      background: rgba(251, 191, 36, 0.1);
+      padding: 4px 10px;
+      border-radius: 8px;
+      margin-left: 10px;
+      white-space: nowrap;
+    }
+
+    /* ORDER BUTTON */
+    .btn-order {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      background-color: var(--whatsapp-green);
+      color: white;
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      margin-top: 35px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-dark);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    .contact-link {
+      color: var(--accent-gold);
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand-badge">🍔</div>
+    <h1>Mo's Take-Aways</h1>
+    <p class="subtitle">Strictly Halal Fast Food</p>
+    <div class="location-tag">📍 Cnr 3rd Ave & Northern Rd, Nigel</div>
+  </header>
+
+  <main class="container">
+
+    <!-- TOASTIES SECTION -->
+    <div class="section-title">
+      <span>Toasted Sandwiches</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="menu-card">
+      <div class="item-info">
+        <h3>Cheese & Tomato</h3>
+        <p>Classic melted cheese and sliced tomato</p>
+      </div>
+      <div class="item-price">R30</div>
+    </div>
+
+    <div class="menu-card">
+      <div class="item-info">
+        <h3>Chicken & Mayonnaise</h3>
+        <p>Shredded seasoned chicken in rich mayo</p>
+      </div>
+      <div class="item-price">R42</div>
+    </div>
+
+    <div class="menu-card">
+      <div class="item-info">
+        <h3>Steak, Egg & Cheese</h3>
+        <p>Tender spiced steak, fried egg & cheddar</p>
+      </div>
+      <div class="item-price">R55</div>
+    </div>
+
+    <!-- BURGERS SECTION -->
+    <div class="section-title">
+      <span>Burgers</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="menu-card">
+      <div class="item-info">
+        <h3>Beef Burger</h3>
+        <p>Grilled beef patty with sauce and salad</p>
+      </div>
+      <div class="item-price">R45</div>
+    </div>
+
+    <div class="menu-card">
+      <div class="item-info">
+        <h3>Chicken Burger</h3>
+        <p>Crispy or grilled chicken fillet on a toasted bun</p>
+      </div>
+      <div class="item-price">R48</div>
+    </div>
+
+    <div class="menu-card">
+      <div class="item-info">
+        <h3>Mo's Special Burger</h3>
+        <p>Double patty, cheese, egg, steak sauce & chips</p>
+      </div>
+      <div class="item-price">R75</div>
+    </div>
+
+    <!-- CURRY & RICE SECTION -->
+    <div class="section-title">
+      <span>Curry & Rice</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="menu-card">
+      <div class="item-info">
+        <h3>Mutton Curry & Rice</h3>
+        <p>Slow-cooked traditional mutton curry</p>
+      </div>
+      <div class="item-price">R70</div>
+    </div>
+
+    <div class="menu-card">
+      <div class="item-info">
+        <h3>Chicken Curry & Rice</h3>
+        <p>Mild spiced chicken curry served with savory rice</p>
+      </div>
+      <div class="item-price">R60</div>
+    </div>
+
+    <!-- COMBOS & CHIPS -->
+    <div class="section-title">
+      <span>Chips & Combos</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="menu-card">
+      <div class="item-info">
+        <h3>Large Fresh Chips</h3>
+        <p>Seasoned golden fried chips</p>
+      </div>
+      <div class="item-price">R35</div>
+    </div>
+
+    <div class="menu-card">
+      <div class="item-info">
+        <h3>Burger & Chips Combo</h3>
+        <p>Any classic burger served with chips & 330ml drink</p>
+      </div>
+      <div class="item-price">R78</div>
+    </div>
+
+    <!-- WHATSAPP DIRECT ORDER -->
+    <a href="https://wa.me/27828847111?text=Hi!%20I%20would%20like%20to%20place%20an%20order%20at%20Mo's%20Take-Aways." class="btn-order" target="_blank">
+      Order Direct via WhatsApp
+    </a>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Call or WhatsApp to order: <a href="tel:0828847111" class="contact-link">082 884 7111</a></p>
+      <p style="margin-top: 15px; opacity: 0.5;">&copy; Mo's Take-aways, Nigel.</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
+
